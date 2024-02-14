@@ -49,7 +49,8 @@
         </v-row>
       </v-col>
     </v-container>
-    <h5 class="text-center">ພັດທະນາໂດຍ: ນິລຸດ ເຮືອງແພງສີ</h5>
+
+    <v-btn dark color="pink" @click="goToAnotherPage">ເປີດຂອງຂວັນພິເສດ</v-btn>
   </v-app>
 </template>
 
@@ -85,6 +86,11 @@ export default {
     },
     showHappyMessage() {
       this.happyMessage = true
+    },
+    goToAnotherPage() {
+      // Your code to navigate to another page here
+      // For example:
+      this.$router.push('/inspire')
     },
   },
 }
